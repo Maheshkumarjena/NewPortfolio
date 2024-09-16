@@ -9,7 +9,7 @@ const content = [
     websiteLink: "https://maheshkumarjena.github.io/majorProject/",
     title: "HTML,CSS,JS E-commerce site",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      " A simple E-commmerce website made out of Pure HTML,CSS and JS  ",
     content: (
       <div style={{ position: "relative", paddingTop: "100%" }}>
         {" "}
@@ -50,14 +50,14 @@ const content = [
     sourceCode: "git@github.com:Maheshkumarjena/AuthFrontend.git",
     websiteLink:
       "https://auth-frontend-bt9fsab5b-maheshkumarjenas-projects.vercel.app/",
-    title: "HTML,CSS,JS E-commerce site",
+    title: "React CRUD application",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "This React-based web app implements CRUD operations for user authentication. Users can sign up, log in, update their profiles, and delete accounts. It includes form validation, password encryption, and session management for secure authentication. The front-end is in React, while the back-end, built with Node.js and Express, connects to a MongoDB database. This project demonstrates basic user authentication flows and CRUD functionality.",
     content: (
       <div style={{ position: "relative", paddingTop: "100%" }}>
         {" "}
         {/* Maintain aspect ratio */}
-        <h1>Responsive Embedded Website</h1>
+        <h1> </h1>
         <div
           style={{
             position: "absolute",
@@ -70,7 +70,7 @@ const content = [
             zIndex: 1, // Ensure text is above the iframe
           }}
         >
-          <h2>HTML,CSS,JS E-commerce site</h2>
+          <h2>CRUD application</h2>
         </div>
         <iframe
           src="https://auth-frontend-bt9fsab5b-maheshkumarjenas-projects.vercel.app/" // URL of the live website
@@ -91,9 +91,9 @@ const content = [
   {
     sourceCode: "https://github.com/Maheshkumarjena/Quiz_app.git",
     websiteLink: "https://maheshkumarjena.github.io/Quiz_app/",
-    title: "HTML,CSS,JS E-commerce site",
+    title: "A simple quiz aap ",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "This quiz app is built with HTML, CSS, and JavaScript. It presents multiple-choice questions, tracks user answers, and calculates the score in real-time. JavaScript handles the quiz logic, while HTML and CSS create a responsive, user-friendly interface. This project showcases basic front-end development and dynamic functionality.",
     content: (
       <div style={{ position: "relative", paddingTop: "100%" }}>
         {" "}
@@ -111,7 +111,7 @@ const content = [
             zIndex: 1, // Ensure text is above the iframe
           }}
         >
-          <h2>HTML,CSS,JS E-commerce site</h2>
+          <h2>Quiz app</h2>
         </div>
         <iframe
           src="https://maheshkumarjena.github.io/Quiz_app/" // URL of the live website
