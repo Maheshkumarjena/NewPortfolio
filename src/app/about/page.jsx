@@ -135,54 +135,31 @@ const AboutPage = () => {
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     MongoDB
                   </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    PostgreSQL
-                  </div>
+                 
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Node.js
                   </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    Nest.js
-                  </div>
+                 
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Express.js
                   </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    Spring Boot
-                  </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    GraphQL
-                  </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    Apollo
-                  </div>
+                 
+                 
+                 
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Redux
                   </div>
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Framer Motion
                   </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    Three.js
-                  </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    WebGL
-                  </div>
+
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Webpack
                   </div>
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Vite
                   </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    Docker
-                  </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    AWS
-                  </div>
-                  <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                    Firebase
-                  </div>
+                
                   <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                     Git
                   </div>
@@ -244,12 +221,12 @@ const AboutPage = () => {
                     <div className="w-1/3 ">
                       {/* JOB TITLE */}
                       <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                        Senior JavaScript Engineer
-                      </div>
+                        Building projects
+                        </div>
                       {/* JOB DESC */}
                       <div className="p-3 text-sm italic">
-                        I led web development, offering expertise in JavaScript
-                        frameworks.{" "}
+                       Currently working on different kind of projects to learn the industry standards and test my skills.
+                       {" "}
                       </div>
                       {/* JOB DATE */}
                       <div className="p-3 text-red-400 text-sm font-semibold">
@@ -262,9 +239,7 @@ const AboutPage = () => {
                     </div>
                     {/* CENTER */}
                     <div className="w-1/6 flex justify-center">
-                      {/* LINE */}
                       <div className="w-1 h-full bg-gray-600 rounded relative">
-                        {/* LINE CIRCLE */}
                         <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
                       </div>
                     </div>
@@ -287,52 +262,23 @@ const AboutPage = () => {
                     <div className="w-1/3 ">
                       {/* JOB TITLE */}
                       <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                        Senior React Developer
+                        Learnt different Technologies 
                       </div>
                       {/* JOB DESC */}
                       <div className="p-3 text-sm italic">
-                        I spearheaded React-based application development,
-                        leveraging advanced skills.{" "}
+                       Learnt all the necessary tech stacks for Web development.
+                       .{" "}
                       </div>
                       {/* JOB DATE */}
                       <div className="p-3 text-red-400 text-sm font-semibold">
-                        2019 - 2024{" "}
+                        2022 - 2023{" "}
                       </div>
                       {/* JOB COMPANY */}
-                      <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                        Microsoft
-                      </div>
+                   
                     </div>
                   </div>
                   {/* EXPERIENCE LIST ITEM */}
-                  <div className="flex justify-between h-48">
-                    {/* LEFT */}
-                    <div className="w-1/3 ">
-                      {/* JOB TITLE */}
-                      <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                        Freelancer{" "}
-                      </div>
-                      {/* JOB DESC */}
-                      <div className="p-3 text-sm italic">
-                        I provided web solutions, applying a range of
-                        technologies to address client requirements.{" "}
-                      </div>
-                      {/* JOB DATE */}
-                      <div className="p-3 text-red-400 text-sm font-semibold">
-                        2010 - 2019{" "}
-                      </div>
-                    </div>
-                    {/* CENTER */}
-                    <div className="w-1/6 flex justify-center">
-                      {/* LINE */}
-                      <div className="w-1 h-full bg-gray-600 rounded relative">
-                        {/* LINE CIRCLE */}
-                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
-                      </div>
-                    </div>
-                    {/* RIGHT */}
-                    <div className="w-1/3 "></div>
-                  </div>
+               
                 </motion.div>
               </div>
             </div>
