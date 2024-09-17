@@ -52,58 +52,60 @@ export const StickyScroll = ({ content, contentClassName }) => {
   }, [activeCard]);
 
   return (
-    <motion.div
-      className="   scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-transparent h-[80vh]  md:h-[50vh]  lg:h-[50vh]  w-fit  absolute  overflow-y-scroll flex  justify-center flex-col lg:flex-row top-24 lg:top-44  space-x-10 rounded-md p-10 "
-      ref={ref}
-    >
-      <div className=" w-full h-[100]     sticky lg:m-auto z-20 lg:block -top-[56px] lg:top-10 ">
-        <div
-          style={{ background: backgroundGradient }}
-          className={cn(
-            " z-10   w-[90%] m-auto mt-4  lg:w-80 h-60   bg-white  overflow-hidden",
-            contentClassName
-          )}
-        >
-          {content[activeCard].content ?? null}
+    <div className="h-[86vh] w-full flex ">
+      <motion.div
+        className=" scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-transparent h-[80vh]  md:h-[50vh]  lg:h-[50vh]  w-fit    overflow-y-scroll flex  justify-center flex-col lg:flex-row top-24 lg:top-44  space-x-10 rounded-md pt-10 m-auto "
+        ref={ref}
+      >
+        <div className=" w-full h-[100] sticky lg:m-auto p-0 z-20 lg:block -top-[56px] lg:top-10 ">
+          <div
+            style={{ background: backgroundGradient }}
+            className={cn(
+              " z-10   w-[90%] m-auto mt-4  lg:w-80 h-60  bg-white  overflow-hidden",
+              contentClassName
+            )}
+          >
+            {content[activeCard].content ?? null}
+          </div>
         </div>
-      </div>
 
-      <div className="   h-[50%]  lg:w-full z-[2] left-[-20px] lg:left-0   relative flex  items-start px-4 ">
-        <div className="max-w-2xl m-auto mt-32 lg:mt-2">
-          {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
-              <motion.h2
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 1,
-                }}
-                className="text-2xl font-bold text-slate-100"
-              >
-                {item.title}
-              </motion.h2>
-              <motion.p
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: activeCard === index ? 1 : 1,
-                }}
-                className="text-kg text-slate-300 max-w-sm mt-5"
-              >
-                {item.description}
-              </motion.p>
-              <div className="flex mt-4 gap-2">
-                <ShimerBtn link={item.websiteLink} text="Live App" />
+        <div className="   h-[50%]  lg:w-full z-[2] left-[-20px] lg:left-0   relative flex  items-start px-4 ">
+          <div className="max-w-2xl m-auto mt-32 lg:mt-2">
+            {content.map((item, index) => (
+              <div key={item.title + index} className="my-20">
+                <motion.h2
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 1,
+                  }}
+                  className="text-2xl font-bold text-slate-100"
+                >
+                  {item.title}
+                </motion.h2>
+                <motion.p
+                  initial={{
+                    opacity: 0,
+                  }}
+                  animate={{
+                    opacity: activeCard === index ? 1 : 1,
+                  }}
+                  className="text-kg text-slate-300 max-w-sm mt-5"
+                >
+                  {item.description}
+                </motion.p>
+                <div className="flex mt-4 gap-2">
+                  <ShimerBtn link={item.websiteLink} text="Live App" />
 
-                <BorderMagicBtn link={item.sourceCode} text="Source code" />
+                  <BorderMagicBtn link={item.sourceCode} text="Source code" />
+                </div>
               </div>
-            </div>
-          ))}
-          <div className="h-40" />
+            ))}
+            <div className="h-40" />
+          </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
