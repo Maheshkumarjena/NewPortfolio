@@ -48,7 +48,7 @@ const CenterImage: React.FC = () => {
 
   return (
     <motion.div
-      className="sticky top-0 h-screen w-full"
+      className="sticky top-0 m-0 h-screen w-full"
       style={{
         clipPath,
         backgroundSize,

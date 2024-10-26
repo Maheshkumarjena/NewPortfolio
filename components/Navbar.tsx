@@ -94,15 +94,7 @@ const Navbar: React.FC = ({userData}) => {
             </Sheet>
           </div>
 
-          <Link href="/">
-            <p>
-              <Image
-                src={"https://printify.com/pfh/media/logo-old-B5JY5YNQ.svg"}
-                width="140"
-                height="100"
-              ></Image>
-            </p>
-          </Link>
+         
         </div>
 
         {/* Desktop Links */}
