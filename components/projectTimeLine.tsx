@@ -1,23 +1,30 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import ShimmerButton from "./ui/shimerBtn";
 
 export function TimelineDemo() {
   const data = [
     {
-      title: "2024",
+      title: "A social network for students and alumni to connect",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm bg-transparent font-normal mb-8">
             Built and launched Aceternity UI and Aceternity UI Pro from scratch
           </p>
-          <div className="flex">
-            <h1 className="text-2xl font-bold mb-4">Embedding an Iframe</h1>
-            <iframe
-              src="https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app/"
+          <div className="flex flex-col">
+            <Image
+            width={200}
+            height={20}
+              src="/d1.png"
               title="Example Site"
-              className="w-full h-96 border-0 shadow-lg"
-            ></iframe>
+              className="w-full h-auto min-h-[150px] background-fit border-0 shadow-lg"
+            />
+            <div className="mt-6 flex flex-row gap-2">
+            <ShimmerButton text="View Site" />
+            <ShimmerButton text="Source code" />
+
+            </div>
           </div>
         </div>
       ),
