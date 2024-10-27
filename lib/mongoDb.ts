@@ -13,7 +13,6 @@ export const connectToDatabase = async () => {
   }
 
   return mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+   
   });
 };

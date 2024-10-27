@@ -1,13 +1,10 @@
 import type { Config } from "tailwindcss";
 import animatePlugin from "tailwindcss-animate";
-const colors = require("tailwindcss/colors");
+// @ts-ignore
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+// import type { Plugin } from "tailwindcss";
 
-export type FlattenColorPalette = typeof flattenColorPalette;
-
-
-
-
+const colors = require("tailwindcss/colors");
 
 const config: Config = {
 	darkMode: ["class"],
@@ -78,9 +75,11 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [addVariablesForColors,
+	plugins: [
+		addVariablesForColors,
 		animatePlugin,
 		// Custom plugin to hide scrollbar
+		// @ts-ignore
 		function ({ addUtilities }) {
 			addUtilities({
 				".hide-scrollbar": {
@@ -97,9 +96,9 @@ const config: Config = {
 	],
 };
 
-function addVariablesForColors({ addBase, theme }: any) {
-	let allColors = flattenColorPalette(theme("colors"));
-	let newVars = Object.fromEntries(
+function addVariablesForColors({ addBase, theme }: { addBase: (base: any) => void; theme: (key: string) => any }) {
+	const allColors = flattenColorPalette(theme("colors"));
+	const newVars = Object.fromEntries(
 		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
 	);
 
