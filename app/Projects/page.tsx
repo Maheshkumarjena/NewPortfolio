@@ -3,7 +3,7 @@ import { TimelineDemo } from '@/components/projectTimeLine'
 
 const page = () => {
   return (
-    <div>
+    <div className='max-h-fit h-fit' >
 <TimelineDemo/>
     </div>
   )

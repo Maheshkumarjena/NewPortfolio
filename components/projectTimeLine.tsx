@@ -116,7 +116,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-2xl font-bold md:text-sm  mb-4">
-            Deployed 5 new components on Aceternity today
+            Technology used for authentication
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
@@ -170,7 +170,7 @@ export function TimelineDemo() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full bg-transparent h-full">
       <Timeline data={data} />
     </div>
   );

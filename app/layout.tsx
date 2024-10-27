@@ -35,19 +35,17 @@ export default async function RootLayout({
     <html lang="en">
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="light"
         enableSystem
         disableTransitionOnChange
       >
-        
           <body
-            className={` antialiased hide-scrollbar lg:hide-scrollbar bg-[linear-gradient(311deg,#22b5fe,#ffbad6)] `}
+            className={`  hide-scrollbar lg:hide-scrollbar bg-[linear-gradient(311deg,#22b5fe,#ffbad6)] `}
           >
-            <Navbar  />
+            <Navbar/>
             {children}
-            <Toaster />
+            <Toaster/>
           </body>
-        
       </ThemeProvider>
     </html>
   );
