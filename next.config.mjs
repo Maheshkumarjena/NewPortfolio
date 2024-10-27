@@ -6,10 +6,24 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "images.pexels.com",
-        port: "3000",
+        port: "",
         pathname: "/images/**",
       },
     ],
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value:
+              "frame-src 'self' https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app;",
+          },
+        ],
+      },
+    ];
   },
 };
 
