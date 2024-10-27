@@ -12,12 +12,10 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import { FaUser } from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import { SignOut } from "./signout-btn";
 
 
-const Navbar: React.FC = ({userData}) => {
+const Navbar: React.FC = () => {
 
-  console.log(userData);
   console.log("user data")
   // console.log(userData.name)
 
@@ -125,20 +123,7 @@ const Navbar: React.FC = ({userData}) => {
           
         </div>
 
-        <div className="flex flex-row gap-[3vw] items-center">
-          <div className="flex flex-row items-center gap-2">
-            {userData ? (
-              <>
-                <p>
-                  <FaUser />
-                </p>
-                <p>{userData.name.slice(0, 6)}</p>
-              </>
-            ) : (
-              " "
-            )}
-          </div>{" "}
-        </div>
+        
       </div>
 
       {/* Mobile Menu with opacity animation */}

@@ -1,9 +1,8 @@
 "use client";
-import { motion, useInView, useScroll } from "framer-motion";
+import { motion, useInView,  } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 const AboutPage = () => {
-  const containerRef = useRef();
 
   const skillRef = useRef();
   // const isSkillRefInView = useInView(skillRef, {once:true});

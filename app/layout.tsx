@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
-import { auth } from "@/auth";
 import { Toaster } from "@/components/ui/toaster";
 
 // const geistSans = localFont({
@@ -30,9 +29,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   
-  const session = await auth();
 
-  const user = session?.user;
 
   return (
     <html lang="en">
@@ -46,7 +43,7 @@ export default async function RootLayout({
           <body
             className={` antialiased hide-scrollbar lg:hide-scrollbar bg-[linear-gradient(311deg,#22b5fe,#ffbad6)] `}
           >
-            <Navbar userData={user} />
+            <Navbar  />
             {children}
             <Toaster />
           </body>
