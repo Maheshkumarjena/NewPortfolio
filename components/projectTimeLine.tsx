@@ -22,9 +22,14 @@ export function TimelineDemo() {
               className="w-full h-auto min-h-[150px] background-fit border-0 shadow-lg"
             />
             <div className="mt-6 flex flex-row gap-2">
-              
-              <ShimmerButton text="View Site" />
-              <ShimmerButton text="Source code" />
+              <ShimmerButton
+                text="View Site"
+                link="https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app/"
+              />
+              <ShimmerButton
+                text="Source code"
+                link="https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app/"
+              />
             </div>
           </div>
         </div>
