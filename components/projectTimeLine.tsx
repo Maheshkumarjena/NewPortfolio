@@ -9,14 +9,15 @@ export function TimelineDemo() {
       title: "A social network for students and alumni to connect",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm bg-transparent font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          <p className="text-neutral-800  text-xs md:text-sm bg-transparent font-normal mb-8">
+            built the frontend of this social platform using Next js
           </p>
+          <hr />
           <div className="flex flex-col">
             <Image
               alt="image"
-              width={200}
-              height={20}
+              width={1000}
+              height={1000}
               src="/d1.png"
               title="Example Site"
               className="w-full h-auto min-h-[150px] background-fit border-0 shadow-lg"
@@ -36,7 +37,37 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Early 2023",
+      title: " A complete user Authentication application",
+      content: (
+        <div>
+          <p className="text-neutral-800  text-xs md:text-sm bg-transparent font-normal mb-8">
+            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+          </p>
+          <div className="flex flex-col">
+            <Image
+              alt="image"
+              width={1000}
+              height={1000}
+              src="/d1.png"
+              title="Example Site"
+              className="w-full h-auto min-h-[150px] background-fit border-0 shadow-lg"
+            />
+            <div className="mt-6 flex flex-row gap-2">
+              <ShimmerButton
+                text="View Site"
+                link="https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app/"
+              />
+              <ShimmerButton
+                text="Source code"
+                link="https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app/"
+              />
+            </div>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -81,10 +112,10 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Changelog",
+      title: "A complete user Authentication application",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
+          <p className="text-neutral-800 dark:text-neutral-200 text-2xl font-bold md:text-sm  mb-4">
             Deployed 5 new components on Aceternity today
           </p>
           <div className="mb-8">

@@ -10,7 +10,7 @@ const Page = () => {
         >
           <div className="md:w-1/3 w-full">
             <h1 className="text-4xl text-gray-800 sm:text-4xl font-bold title-font mb-4">
-              Contact Us
+              Contact Me
             </h1>
             <p className="leading-relaxed text-xl text-gray-900">
               We are here to assist you! If you have any questions or need
