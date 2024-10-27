@@ -14,16 +14,17 @@ export function TimelineDemo() {
           </p>
           <div className="flex flex-col">
             <Image
-            width={200}
-            height={20}
+              alt="image"
+              width={200}
+              height={20}
               src="/d1.png"
               title="Example Site"
               className="w-full h-auto min-h-[150px] background-fit border-0 shadow-lg"
             />
             <div className="mt-6 flex flex-row gap-2">
-            <ShimmerButton text="View Site" />
-            <ShimmerButton text="Source code" />
-
+              
+              <ShimmerButton text="View Site" />
+              <ShimmerButton text="Source code" />
             </div>
           </div>
         </div>
