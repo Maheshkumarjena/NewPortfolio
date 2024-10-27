@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
+  // @ts-ignore
   items,
   direction = "left",
   speed = "fast",
@@ -15,11 +16,9 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
-  
+
   const [start, setStart] = useState(false);
 
-
-  
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -36,8 +35,6 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
-
-
 
   const getDirection = () => {
     if (containerRef.current) {
@@ -81,7 +78,7 @@ export const InfiniteMovingCards = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item,) => (
+        {items.map((item) => (
           <li
             className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{

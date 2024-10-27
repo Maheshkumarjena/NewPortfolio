@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true,
     "noEmitOnError": false, // Set to false to allow emitting files even with errors
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
