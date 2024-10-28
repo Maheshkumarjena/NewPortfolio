@@ -23,10 +23,10 @@ const AboutPage = () => {
             <div className="flex flex-col  justify-center">
               {/* BIOGRAPHY IMAGE */}
               <Image
-                src=""
+                src="/d1.png"
                 alt=""
-                width={112}
-                height={112}
+                width={1012}
+                height={1912}
                 className="w-28 h-28 rounded-full object-cover"
               />
               {/* BIOGRAPHY TITLE */}
@@ -230,7 +230,7 @@ const AboutPage = () => {
                     {/* JOB DESC */}
                     <div className="p-3 text-sm italic">
                       Currently working on different kind of projects to learn
-                      the industry standards and test my skills.{" "}
+                      the industry standards and testing my skills.{" "}
                     </div>
                     {/* JOB DATE */}
                     <div className="p-3 text-slate-900 text-sm font-semibold">
