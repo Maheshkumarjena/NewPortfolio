@@ -83,7 +83,7 @@ export const InfiniteMovingCards: React.FC<InfiniteMovingCardsProps> = ({
       >
         {items.map((item) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className=" w-[250px] md:w-[350px] h-auto max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 lg:w-[450px]"
             style={{
               background:
                 "linear-gradient(180deg, var(--slate-800), var(--slate-900))",

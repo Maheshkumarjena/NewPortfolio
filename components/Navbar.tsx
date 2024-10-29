@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
                   </svg>
                 </button>
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent className="font-serif" >
                 <SheetHeader>
                   <div className=" -mt-4 flex flex-col gap-8">
                     <SheetTitle>
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
                     </SheetTitle>
 
                     <SheetTitle className="hover:text-primary   transition-all duration-300 ease-in-out hover:font-bold hover:scale-105">
-                      <Link href="/projects">
+                      <Link href="/Projects">
                         <SheetTrigger>Projects</SheetTrigger>
                       </Link>
                     </SheetTitle>
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 items-center lg:space-x-12">
+        <div className="hidden md:flex space-x-6 items-center font-mono lg:space-x-12">
           <Link href="/">
             <p className="  transition-all duration-300 ease-in-out hover:font-bold hover:scale-105 ">
               Home

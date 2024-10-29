@@ -66,28 +66,35 @@ const ParallaxImages: React.FC = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/js.png"
         alt="An example of a space launch"
         start={-200}
         end={200}
         className="w-1/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="nextjs.png"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="fg.png"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="node.png"
+        alt="Orbiting satellite"
+        start={-100}
+        end={-300}
+        className="ml-24 w-5/12"
+      />
+      <ParallaxImg
+        src="mgdb.png"
         alt="Orbiting satellite"
         start={200}
         end={-400}
@@ -103,7 +110,7 @@ const ParallaxImg: React.FC<ParallaxImgProps> = ({ className, alt, src, start, e
     target: ref,
     offset: [`${start}px end`, `end ${end * -1}px`],
   });
-
+        
   const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
   const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
   const y = useTransform(scrollYProgress, [0, 1], [start, end]);
