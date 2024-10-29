@@ -64,9 +64,11 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			animation: {
+				aurora: "aurora 60s linear infinite",
 				scroll:
 					"scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
 				shimmer: "shimmer 2s linear infinite",
+				
 
 			},
 			keyframes: {
@@ -81,6 +83,14 @@ const config: Config = {
 					},
 					to: {
 						backgroundPosition: "-200% 0",
+					},
+				},
+				aurora: {
+					from: {
+						backgroundPosition: "50% 50%, 50% 50%",
+					},
+					to: {
+						backgroundPosition: "350% 50%, 350% 50%",
 					},
 				},
 			},
@@ -119,3 +129,4 @@ function addVariablesForColors({ addBase, theme }: { addBase: (base: any) => voi
 }
 
 export default config;
+

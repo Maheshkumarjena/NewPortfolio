@@ -19,7 +19,7 @@ export const SmoothScrollHero: React.FC = () => {
   // Use client-side scroll and lenis effects in Next.js
 
   return (
-    <div className=" hide-scrollbar bg-transparent">
+    <div className=" z-50 hide-scrollbar bg-transparent">
       <Hero />
       {/* <Schedule /> */}
     </div>
@@ -48,7 +48,7 @@ const CenterImage: React.FC = () => {
 
   return (
     <motion.div
-      className="sticky top-0 m-0 h-screen w-full"
+      className="sticky z-50 top-0 m-0 h-screen w-full"
       style={{
         clipPath,
         backgroundSize,
@@ -110,7 +110,7 @@ const ParallaxImg: React.FC<ParallaxImgProps> = ({ className, alt, src, start, e
     target: ref,
     offset: [`${start}px end`, `end ${end * -1}px`],
   });
-        
+
   const opacity = useTransform(scrollYProgress, [0.75, 1], [1, 0]);
   const scale = useTransform(scrollYProgress, [0.75, 1], [1, 0.85]);
   const y = useTransform(scrollYProgress, [0, 1], [start, end]);
