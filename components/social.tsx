@@ -8,7 +8,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const SocialLinks = () => {
   return (
-    <section className="flex flex-col items-center h-screen m-auto z-50 justify-center py-10 ">
+    <section className="flex flex-col items-center h-[60vh] md:h-[70vh] m-auto pb-56 sm:pb-96 md:pb-52 z-50 justify-center py-10 ">
       <h2 className="text-2xl font-semibold mb-4  ">Connect with Me</h2>
 
       <div className="flex space-x-4 mb-6">
