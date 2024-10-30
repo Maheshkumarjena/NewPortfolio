@@ -25,7 +25,7 @@ export function TimelineDemo() {
             <div className="mt-6 flex flex-row gap-2">
               <ShimmerButton
                 text="View Site"
-                link="https://alumn-a28s7lk87-maheshkumarjenas-projects.vercel.app/"
+                link="https://alumn-nex.vercel.app"
               />
               <ShimmerButton
                 text="Source code"
