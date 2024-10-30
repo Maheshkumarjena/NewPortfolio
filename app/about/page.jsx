@@ -14,7 +14,7 @@ const AboutPage = () => {
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
   return (
-    <div className="   overflow-x-hidden  h-screen bg-transparent">
+    <div className="   overflow-x-hidden  h-screen ">
       <div className="   overflow-x-hidden  flex w-screen h-[100vh]  m-auto px-[5vw] sm:px-[10vw]  lg:px-[20vw] top-0 left-0 pb-0 mb-0">
         <motion.div className="m-auto mb-0 items-center  overflow-x-hidden justify-center  ">
           {/* CONTAINER */}
@@ -24,8 +24,8 @@ const AboutPage = () => {
             {/* BIOGRAPHY CONTAINER */}
             <div className="flex flex-col  justify-center" ref={aboutRef}>
               {/* BIOGRAPHY IMAGE */}
-              <motion.div
-                initial={{ x: "-1300px" }}
+              <motiodiv
+                initial={{ x: "-300px" }}
                 animate={isAboutRefInView ? { x: 0 } : {}}
               >
                 <Image
@@ -35,21 +35,11 @@ const AboutPage = () => {
                   height={1912}
                   className="w-28 h-28 rounded-full object-cover"
                 />
-              </motion.div>
+              </motiodiv>
               {/* BIOGRAPHY TITLE */}
-              <motion.h1
-                className="font-bold text-2xl"
-                initial={{ x: "-1300px" }}
-                animate={isAboutRefInView ? { x: 0 } : {}}
-              >
-                My Journey
-              </motion.h1>
+              <motion.h1 className="font-bold text-2xl">My Journey</motion.h1>
               {/* BIOGRAPHY DESC */}
-              <motion.p
-                initial={{ x: "-1300px" }}
-                animate={isAboutRefInView ? { x: 0 } : {}}
-                className="text-lg pt-4"
-              >
+              <motion.p className="text-lg pt-4">
                 I’m a proficient MERN stack developer with a strong focus on
                 Next.js and Tailwind CSS, excelling in building dynamic and
                 responsive web applications. I have a solid understanding of
@@ -60,11 +50,7 @@ const AboutPage = () => {
                 updated with the latest technologies.
               </motion.p>
               {/* BIOGRAPHY QUOTE */}
-              <motion.span
-                initial={{ x: "-1300px" }}
-                animate={isAboutRefInView ? { x: 0 } : {}}
-                className="italic pt-2"
-              >
+              <motion.span className="italic pt-2">
                 Curious and passionate, I turn challenges into solutions .{" "}
               </motion.span>
               {/* BIOGRAPHY SIGN SVG*/}

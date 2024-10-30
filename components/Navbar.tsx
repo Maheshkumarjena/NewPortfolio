@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   // console.log(userData.name)
 
   return (
-    <nav className=" z-50  sticky top-0 border-b backdrop-blur-sm mx-auto  p-4">
+    <nav className=" z-50 bg-transparent  sticky top-0 border-b backdrop-blur-sm mx-auto  p-4">
       <div className=" flex justify-between lg:justify-around  items-center">
         {/* Logo */}
         <div className=" text-2xl font-bold flex flex-row gap-3">
@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 items-center bg-transparent font-mono lg:space-x-12">
+        <div className="hidden md:flex space-x-6 items-center  font-mono lg:space-x-12">
           <Link href="/">
             <p className="  transition-all duration-300 ease-in-out hover:font-bold hover:scale-105 ">
               Home
