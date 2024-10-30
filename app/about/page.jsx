@@ -5,8 +5,10 @@ import { useRef } from "react";
 const AboutPage = () => {
 
   const skillRef = useRef();
-  // const isSkillRefInView = useInView(skillRef, {once:true});
+  //const isSkillRefInView = useInView(skillRef, {once:true});
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
+  const aboutRef= useRef();
+  const isAboutRefInView = useInView(aboutRef, { margin: "-100px" });
 
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
@@ -18,30 +20,35 @@ const AboutPage = () => {
           {/* CONTAINER */}
 
           {/* TEXT CONTAINER */}
-          {/* BIOGRAPHY CONTAINER */}
-          <div className="  overflow-x-hidden  pt-5">
-            <div className="flex flex-col  justify-center">
+          <div>
+            {/* BIOGRAPHY CONTAINER */}
+            <div className="flex flex-col  justify-center" ref={aboutRef}>
               {/* BIOGRAPHY IMAGE */}
-              <Image
-                src="/me2.0.jpg"
-                alt=""
-                width={1012}
-                height={1912}
-                className="w-28 h-28 rounded-full object-cover"
-              />
+              <motion.div
+                initial={{ x: "-1300px" }}
+                animate={isAboutRefInView ? { x: 0 } : {}}
+              >
+                <Image
+                  src="/me2.0.jpg"
+                  alt=""
+                  width={1012}
+                  height={1912}
+                  className="w-28 h-28 rounded-full object-cover"
+                />
+              </motion.div>
               {/* BIOGRAPHY TITLE */}
               <motion.h1
-                initial={{ x: "-300px" }}
-                animate={isSkillRefInView ? { x: 0 } : {}}
                 className="font-bold text-2xl"
+                initial={{ x: "-1300px" }}
+                animate={isAboutRefInView ? { x: 0 } : {}}
               >
                 My Journey
               </motion.h1>
               {/* BIOGRAPHY DESC */}
               <motion.p
-                className="text-lg pt-4"
                 initial={{ x: "-1300px" }}
-                animate={isSkillRefInView ? { x: 0 } : {}}
+                animate={isAboutRefInView ? { x: 0 } : {}}
+                className="text-lg pt-4"
               >
                 I’m a proficient MERN stack developer with a strong focus on
                 Next.js and Tailwind CSS, excelling in building dynamic and
@@ -54,9 +61,9 @@ const AboutPage = () => {
               </motion.p>
               {/* BIOGRAPHY QUOTE */}
               <motion.span
+                initial={{ x: "-1300px" }}
+                animate={isAboutRefInView ? { x: 0 } : {}}
                 className="italic pt-2"
-                initial={{ x: "-900px" }}
-                animate={isSkillRefInView ? { x: 0 } : {}}
               >
                 Curious and passionate, I turn challenges into solutions .{" "}
               </motion.span>
