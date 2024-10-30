@@ -8,31 +8,31 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const SocialLinks = () => {
   return (
-    <section className="flex flex-col items-center z-50 justify-center py-10 ">
+    <section className="flex flex-col items-center h-screen m-auto z-50 justify-center py-10 ">
       <h2 className="text-2xl font-semibold mb-4  ">Connect with Me</h2>
 
       <div className="flex space-x-4 mb-6">
         <a
-          href="https://www.linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/mahesh-kumar-jena-47a6b8253/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-700 dark:text-blue-400"
+          className="text-blue-600 hover:text-blue-700"
         >
           <FontAwesomeIcon icon={faLinkedin} className="h-8 w-8" />
         </a>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Maheshkumarjena"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-700 dark:text-gray-400"
+          className="text-gray-700 hover:text-gray-800"
         >
           <FontAwesomeIcon icon={faGithub} className="h-8 w-8" />
         </a>
         <a
-          href="https://twitter.com/yourusername"
+          href="https://x.com/Maheshjena2004"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 dark:text-blue-300"
+          className="text-blue-500 hover:text-blue-600"
         >
           <FontAwesomeIcon icon={faTwitter} className="h-8 w-8" />
         </a>

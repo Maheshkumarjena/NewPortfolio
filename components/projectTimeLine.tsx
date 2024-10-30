@@ -122,7 +122,7 @@ export function TimelineDemo() {
           <div className="mt-6 flex flex-row gap-2">
             <ShimmerButton
               text="View Site"
-              link="https://github.com/Maheshkumarjena/AuthFrontend.git"
+              link="https://auth-frontend-alpha-nine.vercel.app/"
             />
             <ShimmerButton
               text="Source code"

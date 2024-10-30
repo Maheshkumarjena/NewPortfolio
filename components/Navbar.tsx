@@ -12,7 +12,6 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import { FaUser } from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import { AuroraBackground } from "./ui/aurora-background";
 
 
 const Navbar: React.FC = () => {

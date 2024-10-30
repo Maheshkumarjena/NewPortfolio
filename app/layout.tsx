@@ -42,6 +42,7 @@ export default async function RootLayout({
           <body
             className={`  hide-scrollbar h-fit my-0 lg:hide-scrollbar bg-[linear-gradient(311deg,#22b5fe,#ffbad6)] `}
           >
+            <Navbar/>
             <div>
             {children}
             </div>
