@@ -14,7 +14,7 @@ const AboutPage = () => {
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
   return (
-    <div className="   overflow-x-hidden  h-screen bg-[linear-gradient(311deg,#22b5fe,#ffbad6)]">
+    <div className="   overflow-x-hidden  h-screen bg-transparent">
       <div className="   overflow-x-hidden  flex w-screen h-[100vh]  m-auto px-[5vw] sm:px-[10vw]  lg:px-[20vw] top-0 left-0 pb-0 mb-0">
         <motion.div className="m-auto mb-0 items-center  overflow-x-hidden justify-center  ">
           {/* CONTAINER */}
