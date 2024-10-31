@@ -21,7 +21,7 @@ const Page = () => {
 
     emailjs
       .send(
-        "service_s4zaxxb", // replace with your EmailJS service ID
+        "service_fpwhfyq", // replace with your EmailJS service ID
         "template_2uv4rde", // replace with your EmailJS template ID
         formData,
         "o3U_mhQSFPU9sg57u" // Replace with your actual EmailJS Public Key (found in EmailJS dashboard as 'User ID')
@@ -29,7 +29,11 @@ const Page = () => {
       .then(
         (response) => {
           setSentStatus("Message sent successfully!");
-          setFormData({ user_name: "", user_email: "", user_message: "" }); // clear the form
+          setTimeout(() => {
+            setFormData({ user_name: "", user_email: "", user_message: "" });
+            setSentStatus(" ");
+          }, 2000);
+          // clear the form
         },
         (error) => {
           setSentStatus("Failed to send message. Please try again.");
