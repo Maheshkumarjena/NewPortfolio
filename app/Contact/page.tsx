@@ -11,12 +11,12 @@ const Page = () => {
 
   const [sentStatus, setSentStatus] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { name, value } = e.target; // corrected from 'user_name' to 'name'
     setFormData({ ...formData, [name]: value }); // updates based on the input name
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
 
     emailjs
